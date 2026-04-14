@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 #device-frame {
-    width: 100%;
+    width: center;
     max-width: 350px;
     height: 500px;
     margin: 20px auto;
