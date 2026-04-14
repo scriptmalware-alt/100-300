@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔓 Tools Malware Handphone Target</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Script Malware Handphone Target</h1>
+<p>📂 Masukkan Kode Script Malware Device:</p>
+
+<input type="text" id="device-number" placeholder="Kode Script Malware Device" style="padding: 8px; width: 250px; text-align: center;">
+<button onclick="verifyDevice()" style="padding: 8px 15px; cursor: pointer;">🔍 Verifikasi Kode Script</button>
+
+<p id="status"></p>
+
+<div id="progress"><div id="progress-bar"></div></div>
+
+<div id="device-frame" style="display: none;">
+    
+    <div id="center-text" style="
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:lime;
+    font-size:25px;
+    text-align:center;
+    width:100%;
+    z-index:999;
+    display:none;">
+    Kode script malware 100GB aktif
+    </div>
+
+    <h2></h2>
+
+    <div class="gallery" id="gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpVru1Q6e3chY2-gtcjXF0UjyJ4A4HaCyNQ&s" alt="IMG_001.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNICy2iGxzZblVB5phbFf4_P8bMPh6sSlgsA&s" alt="IMG_002.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfHCvvW1Fwae_mttqXD9DlgMwrYqYNJqzX2Q&s" alt="IMG_003.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBM8mwwtSfwtevssFZKgjZ4bWT3qsltHMdQ&s" alt="IMG_004.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbh8aaA0IN8JExO7_HxGsZUQp7_4w5KQ74wQ&s" alt="IMG_005.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVToNsjaJFQPg_3w52xr8cMlu1DPeCzRJkqg&s" alt="IMG_006.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcTfiG4xwnoppldPxjhn_PMEeuil46fcF75g&s" alt="IMG_007.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQobQTwBlMrALywqbKlmEcFEpfGofyahXwz6g&s" alt="IMG_008.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjKnYU7qCHZKuPRRy5B7iu9yb-2MXb3KRceQ&s" alt="IMG_009.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnrPL6hcWZkyaDiyVCux6jBTv2UG0t-4Zi7Q&s" alt="IMG_010.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvsJs40iolXJEl54ARJSVl_0YMWDOlwZOHag&s" alt="IMG_011.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Bulzkiau1eptA_OP8cxmq686zCvTZ7KMlw&s" alt="IMG_012.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIknUNU5aqKW19u3mcgkIwOt1-IvNBBnmKSQ&s" alt="IMG_013.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJudNvJN4HSLrCDKRSyiZTuQCZKcbZqYPKw&s" alt="IMG_014.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLogkSX20x9sfkSNxYl9R4YW8Reg5G46L7uA&s" alt="IMG_015.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1qw35jTHJmDTaPDdIqjWoDY73l9n2BnFIoQ&s" alt="IMG_016.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjshP-NUaKLokvdPoqtCUtS9XfrOCzuqxhmA&s" alt="IMG_017.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvDNyVj-Vm2sAzRoNH7nohPF5Bb2POkfZVaA&s" alt="IMG_018.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEJ7S7QshBkrk_fgPs6k-8j13lRaFHZHY84g&s" alt="IMG_019.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLnhPofGNUvoW-Kqx9PqGGwVfoZfNK-YWxXA&s" alt="IMG_020.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfUCE6Ab09AebbsgVNh5uty6DHH1UGBToiWg&s" alt="IMG_021.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPlLumWUE7RCOqd3XaTtgqLcct3dXvqfLKtw&s" alt="IMG_022.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9olb-8ZAaG58HSCS1H7dCjZhiVcVv7hi2jw&s" alt="IMG_023.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZzic2iKiw1VKA6qy0GwsnseK-IoYUHEkN-g&s" alt="IMG_024.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVQcEgzbXnvWRRS4CVV_Li9UZa4bz39it5xw&s" alt="IMG_025.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8IwWKNOCtRiSNlGHLsPme_6gpgUS26rJ2AQ&s" alt="IMG_026.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRoOAGiribAGiIzUPiNR9vX7zaiwVNZ4UekA&s" alt="IMG_027.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhe2Wlyi2svAtrluhxw1_x_hrvpoZpTSa1Eg&s" alt="IMG_028.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfY633OEI9dkTSwmwrqHvE2djpLPHoUPE_YQ&s" alt="IMG_029.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90HdptF50WyPQ7fb-mgUuaiBBEUGj1aBsPg&s" alt="IMG_030.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWt1Yzrl8SKdBSxzjWudPY7zLrmF69pSjBA&s" alt="IMG_031.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnsqZmjy_6AeTausk8lbQCwY78ldekS8x38g&s" alt="IMG_032.jpg">
+        </div>
+
+</div>
+
+<div id="delete-progress">
+    <div id="delete-progress-bar"></div>
+</div>
+
+<button id="delete-btn" class="delete-btn">Delete Semua Foto & Video Yang Tersebar</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

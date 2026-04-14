@@ -1,0 +1,108 @@
+body {
+    background-color: black;
+    color: lime;
+    font-family: "Courier New", monospace;
+    padding: 30px;
+    text-align: center;
+}
+#device-frame {
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #111;
+    border: 10px solid gray;
+    border-radius: 30px;
+    box-shadow: 0 0 10px lime;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery {
+    position: absolute;
+    inset: 0;   /* top right bottom left = 0 */
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    padding: 0;
+    margin: 0;
+
+    align-content: start;   /* paksa rapat ke atas */
+    line-height: 0;         /* hilangkan jarak inline */
+}
+
+.gallery img,
+.gallery video {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+img, video {
+    width: 2cm;
+    height: 2cm;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+h1 { margin: 10px 0; }
+#status { margin: 10px 0; }
+
+#progress {
+    width: 50%;
+    height: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: lime;
+}
+
+#delete-progress {
+    width: 50%;
+    height: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    display: none;
+}
+#delete-progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: lime;
+}
+
+.delete-btn {
+    margin-top: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: rgb(0, 60, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blink {
+    animation: blinkText 0.6s infinite;
+}
+
+@keyframes blinkText {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
